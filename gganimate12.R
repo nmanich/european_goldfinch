@@ -13,6 +13,8 @@ eugo <- read.csv("Finalfullmasterdatasetv17xorblankas1.csv")
 
 # set date column as date class
 eugo$OBSERVATION.DATE <- as_date(eugo$OBSERVATION.DATE)
+# alternate way to format dates if excel messes them up
+# eugo$OBSERVATION.DATE <- as.Date(eugo$OBSERVATION.DATE, origin = "1899-12-30")
 
 # make outline for us and canada
 usa <- map_data("usa")
