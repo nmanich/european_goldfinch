@@ -33,7 +33,7 @@ EUGOMAP <- ggplot() + geom_polygon(data = usa,
              stroke = 0,
              shape = 16,
              size = 1) +
-  coord_fixed(xlim = c(-96, -81),  ylim = c(38, 49.5), ratio = 1.2) +
+  coord_fixed(xlim = c(-96, -81),  ylim = c(37.5, 51), ratio = 1.2) +
   transition_time(OBSERVATION.DATE) +
   shadow_mark(past = T, future=F) +
   theme_cowplot(5) +
