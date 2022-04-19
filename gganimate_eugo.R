@@ -9,7 +9,7 @@ library(lubridate)
 library(cowplot)
 
 # load bird data
-eugo <- read.csv("Finalfullmasterdatasetv17xorblankas1.csv")
+eugo <- read.csv("v22forgganim.csv")
 
 # set date column as date class
 eugo$OBSERVATION.DATE <- as_date(eugo$OBSERVATION.DATE)
